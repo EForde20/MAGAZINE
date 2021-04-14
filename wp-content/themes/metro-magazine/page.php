@@ -43,9 +43,9 @@ get_header(); ?>
  <p><?php echo wp_trim_words(get_the_content(),18); ?>
  <li> <?php the_title(); ?> </li>
  <div class= "metabox">
- <?php
- the_author_posts_link();
-the_time('n.j.y');
+ <p>Posted by <?php
+ the_author_posts_link();?></p>
+<?php the_time('n.j.y');
 get_the_category_list();
 ?>
  </div>
