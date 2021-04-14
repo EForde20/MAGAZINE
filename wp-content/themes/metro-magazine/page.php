@@ -33,12 +33,12 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 	<?php
- $homepageEvents = new WP_Query(array(
- 'posts_per_page' => 2,
- 'post_type' => 'beauty'
+ $homepagePosts = new WP_Query(array(
+ 'posts_per_page' => 20,
+ 'post_type' => array('beauty', 'fashion', 'music', 'health')
  ));
- while($homepageEvents->have_posts()){
- $homepageEvents->the_post();?>
+ while($homepagePosts->have_posts()){
+ $homepagePosts->the_post();?>
  <a href="<?php the_permalink();?>">
  <p><?php echo wp_trim_words(get_the_content(),18); ?>
  <li> <?php the_title(); ?> </li>
@@ -49,9 +49,9 @@ get_header(); ?>
 get_the_category_list();
 ?>
  </div>
- <h1 class="page-banner__title"><?php the_title() ?></h1>
+ 
  <div class="generic-content">
-	 <?php the_content() ?>
+	
  </div>
  <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('home.jpg')?>);"></div>
  <?php }
