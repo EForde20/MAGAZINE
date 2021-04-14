@@ -16,6 +16,10 @@ get_header(); ?>
 
 		get_template_part( 'template-parts/content', get_post_format() );
 		echo get_the_category_list(', '); 
+    
+ echo the_author_posts_link();
+ echo the_time('n.j.y');
+
 
 	   /**
         * 
@@ -33,7 +37,6 @@ get_header(); ?>
 
 	endwhile; // End of the loop.
 	?>
-	
 
 	</main><!-- #main -->
 </div><!-- #primary -->
