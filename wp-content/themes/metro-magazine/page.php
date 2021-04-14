@@ -42,6 +42,13 @@ get_header(); ?>
  <a href="<?php the_permalink();?>">
  <p><?php echo wp_trim_words(get_the_content(),18); ?>
  <li> <?php the_title(); ?> </li>
+ <div class= "metabox">
+ <?php
+ the_author_posts_link();
+the_time('n.j.y');
+get_the_category_list();
+?>
+ </div>
  <h1 class="page-banner__title"><?php the_title() ?></h1>
  <div class="generic-content">
 	 <?php the_content() ?>
