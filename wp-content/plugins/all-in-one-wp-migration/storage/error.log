@@ -1,0 +1,6 @@
+Apr 15 2021 00:26:41
+{"Number":2,"Message":"rmdir(C:\\Users\\Emmanuel\\Local Sites\\magazine\\app\\public\\wp-content\\plugins\\all-in-one-wp-migration\\storage\\7ua7qthuopkc): Directory not empty","File":"C:\\Users\\Emmanuel\\Local Sites\\magazine\\app\\public\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\filesystem\\class-ai1wm-directory.php","Line":72}
+
+Apr 15 2021 00:26:42
+{"Number":2,"Message":"filesize(): stat failed for C:\\Users\\Emmanuel\\Local Sites\\magazine\\app\\public\\wp-content\\plugins\\all-in-one-wp-migration\\storage\\7ua7qthuopkc\\magazine.local-20210415-002557-r3ku6j.wpress","File":"C:\\Users\\Emmanuel\\Local Sites\\magazine\\app\\public\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\archiver\\class-ai1wm-archiver.php","Line":231}
+
