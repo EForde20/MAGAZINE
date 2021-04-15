@@ -34,7 +34,7 @@ get_header(); ?>
 
 	<?php
  $homepagePosts = new WP_Query(array(
- 'posts_per_page' => 20,
+ 'posts_per_page' => 10,
  'post_type' => array('beauty', 'fashion', 'music', 'health')
  ));
  while($homepagePosts->have_posts()){
